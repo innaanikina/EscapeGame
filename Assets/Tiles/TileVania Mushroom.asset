@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SPA_Background brown tint_13
+  m_Name: TileVania Mushroom
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -568864715573125675, guid: b5f8a4ced4f8da841b139fac74c5f375, type: 3}
-  m_Color: {r: 0.30566037, g: 0.39372104, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c473eb8f2e934384e9c72253af4c4ddb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0

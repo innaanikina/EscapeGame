@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SPA_Background brown tint_11
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 374688490947754656, guid: b5f8a4ced4f8da841b139fac74c5f375, type: 3}
-  m_Color: {r: 0.35542893, g: 0.39239675, b: 0.9811321, a: 1}
+  m_Color: {r: 0.30566037, g: 0.39372104, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
