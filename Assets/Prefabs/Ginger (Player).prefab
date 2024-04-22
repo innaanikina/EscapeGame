@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1066331521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1066331522}
+  m_Layer: 8
+  m_Name: Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1066331522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066331521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5809156280881641775}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5809156280881641772
 GameObject:
   m_ObjectHideFlags: 0
@@ -18,7 +48,7 @@ GameObject:
   - component: {fileID: 5656730729397656749}
   m_Layer: 8
   m_Name: Ginger (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +63,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1066331522}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -94,7 +125,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1542334901
-  m_SortingLayer: 5
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 1857188551261513057, guid: 972c78d0a2b5aed4897b064a23f5a181, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,8 +151,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.059312344, y: -0.052258015}
-  m_Size: {x: 0.6407213, y: 0.85763884}
+  m_Offset: {x: -0.059312344, y: -0.058020502}
+  m_Size: {x: 0.6407213, y: 0.8691638}
   m_Direction: 0
 --- !u!50 &8591434979198596336
 Rigidbody2D:
@@ -189,6 +220,9 @@ MonoBehaviour:
   runSpeed: 5
   jumpSpeed: 17
   climbSpeed: 5
+  deathKick: {x: 10, y: 10}
+  bullet: {fileID: 6822425612631666358, guid: f049e502a81217b4ca7d64fb670ed5b6, type: 3}
+  weapon: {fileID: 1066331522}
 --- !u!61 &5656730729397656749
 BoxCollider2D:
   m_ObjectHideFlags: 0
